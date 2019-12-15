@@ -16,9 +16,9 @@ after_success:
   #Login to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   #Take those images and push
-  - docker push varunsingla1982/multi-client
-  - docker push varunsingla1982/multi-nginx
-  - docker push varunsingla1982/multi-server
-  - docker push varunsingla1982/multi-worker
+  - docker push varunsingla/multi-client
+  - docker push varunsingla/multi-nginx
+  - docker push varunsingla/multi-server
+  - docker push varunsingla/multi-worker
 
 
