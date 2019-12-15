@@ -15,7 +15,7 @@ after_success:
   - docker build -t varunsingla/multi-worker ./worker
   #Login to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  #Take those images and push
+  #Take those images and push#
   - docker push varunsingla/multi-client
   - docker push varunsingla/multi-nginx
   - docker push varunsingla/multi-server
